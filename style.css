@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    padding: 1em;
+  }
+  .choice {
+    text-align: center;
+    color: red; 
+    width: 30%;
+   
+  }
+  div{
+    text-align: center;
+    margin: 2em;
+  }
+  #yours{
+    background-color: red;
+    float: left;
+    position: relative;
+    top: 0em;
+    width: 30%
+  }
+  #computers{
+    background-color: blue;
+    float: right;
+    top: 0em;
+    width: 30%
+    
+  }
+  #result{
+    background-color: green;
+    position: relative;
+    top: 5em;
+  }
