@@ -1,18 +1,13 @@
-let userChoice;
-
 function assignRock() {
-  userChoice = "rock";
-  playGame();
+  playGame("rock");
 }
 
 function assignPaper() {
-  userChoice = "paper";
-  playGame();
+  playGame("paper");
 }
 
 function assignScissors() {
-  userChoice = "scissors";
-  playGame();
+  playGame("scissors");
 }
 
 function pause() {
@@ -21,7 +16,7 @@ function pause() {
   document.getElementById("computers").innerHTML = "...";
 }
 
-function playGame() {
+function playGame(userChoice) {
   let computerChoice = Math.floor(Math.random() * 3); //get random number from computer
 
   if (computerChoice === 0) {
