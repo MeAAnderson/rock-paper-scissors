@@ -8,17 +8,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>rock paper scissors</h1>
-<div>
+  <h1>rock paper scissors</h1>
+  <h2>click on a button to play against the computer</h2>
+<div class='container'>
   <button class='choice' onclick= 'pause(setTimeout(assignRock, 300))'>rock</button>
   <button class='choice' onclick='pause(setTimeout(assignPaper, 300))'>paper</button>
   <button class='choice' onclick='pause(setTimeout(assignScissors, 300))'>scissors</button>
 </div>
-  
-<div id='yours'></div>
-<div id='computers'></div>
-  
-<div id='result'></div>
-  
+<div class='container'>  
+  <div id='yours'></div>
+  <div id='computers'></div>
+  <div id='result'></div>
+</div>  
 </body>
 </html>

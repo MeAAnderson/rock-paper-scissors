@@ -1,33 +1,60 @@
+*{
+  border-style: solid;
+}
 h1{
-    text-align: center;
-    padding: 1em;
-  }
-  .choice {
-    text-align: center;
-    color: red; 
-    width: 30%;
-   
-  }
-  div{
-    text-align: center;
-    margin: 2em;
-  }
-  #yours{
-    background-color: red;
-    float: left;
-    position: relative;
-    top: 0em;
-    width: 30%
-  }
-  #computers{
-    background-color: blue;
-    float: right;
-    top: 0em;
-    width: 30%
-    
-  }
-  #result{
-    background-color: green;
-    position: relative;
-    top: 5em;
-  }
+  text-align: center;
+  padding: 1em;
+}
+h2{
+  text-align: center;
+  margin: 2em;
+}
+div{
+  text-align: center;
+  margin: 1em;
+  border: 2px;
+  border-color: black;
+}
+.container{
+  height: 11em;
+}
+.choice{
+  height: 4em;
+  width: 30%;
+  border-style: solid;
+  border: 2px solid red;
+  border-radius: 4px;
+  font-size: 1em;
+  text-align: center;
+  background-color: ;
+}
+#yours{
+  float: left;
+}
+#computers{
+  float: right; 
+}
+#result{
+  position: relative;
+  top: 3em;
+  height: 6em;
+  
+  background-color: rgb(115, 222, 190);
+}
+
+#yours, #computers{
+  
+  position: relative;
+  bottom: 3em;
+  
+  width: 38%;
+  height: 3em;
+  
+  background-color: cyan;
+}
+#result, #yours, #computers{
+  visibility: hidden;
+  border-style: solid;
+  border: 2px solid red;
+  border-radius: 4px;
+}
