@@ -1,13 +1,17 @@
+function playGame(){
+  let countUserWins = 0;
+  let countComputerWins = 0;
+}
 function assignRock() {
-  playGame("rock");
+  playRound("rock");
 }
 
 function assignPaper() {
-  playGame("paper");
+  playRound("paper");
 }
 
 function assignScissors() {
-  playGame("scissors");
+  playRound("scissors");
 }
 
 function pause() {
@@ -16,7 +20,7 @@ function pause() {
   document.getElementById("computers").innerHTML = "...";
 }
 
-function playGame(userChoice) {
+function playRound(userChoice){
   let computerChoice = Math.floor(Math.random() * 3); //get random number from computer
 
   if (computerChoice === 0) {
@@ -35,7 +39,8 @@ function playGame(userChoice) {
   let result;
 
   if (userChoice === computerChoice) {
-    result = "it's a tie"; //   document.getElementById('result').innerHTML= 'it\'s a tie';  // is it equal? then it's a tie
+    result = "it's a tie";
+    document.getElementById("result").style.backgroundColor = "cyan";
   } else {
     //if not equal, find out who wins
     //    let result;
@@ -59,4 +64,20 @@ function playGame(userChoice) {
   document.getElementById("yours").style.visibility = "visible";
   document.getElementById("computers").style.visibility = "visible";
   document.getElementById("result").style.visibility = "visible";
+
+  updateCount(result);
+}
+function updateCount(result){
+  let countUserWins = parseInt(document.getElementById('user-count').innerHTML);
+  let countComputerWins = parseInt(document.getElementById('computer-count').innerHTML);
+  if (result === 'you win'){
+    countUserWins += 1
+    document.getElementById('user-count').innerHTML = countUserWins
+    document.getElementById("result").style.backgroundColor = 'greenyellow'
+  } else if (result === 'you lose'){
+    countComputerWins += 1
+    document.getElementById('computer-count').innerHTML = countComputerWins
+    document.getElementById("result").style.backgroundColor = 'tomato'
+  }
+  
 }

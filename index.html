@@ -3,22 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>rock paper scissors</title>
+  <title>Rock Paper Scissors</title>
   <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>rock paper scissors</h1>
-  <h2>click on a button to play against the computer</h2>
-<div class='container'>
-  <button class='choice' onclick= 'pause(setTimeout(assignRock, 300))'>rock</button>
-  <button class='choice' onclick='pause(setTimeout(assignPaper, 300))'>paper</button>
-  <button class='choice' onclick='pause(setTimeout(assignScissors, 300))'>scissors</button>
+  <h1>Rock Paper Scissors</h1>
+  <h2>make a selection to play against the computer</h2>
+<div id='choice-container'>
+  <button class='choice' onclick= 'pause(setTimeout(assignRock, 300))'>Rock</button>
+  <button class='choice' onclick='pause(setTimeout(assignPaper, 300))'>Paper</button>
+  <button class='choice' onclick='pause(setTimeout(assignScissors, 300))'>Scissors</button>
 </div>
-<div class='container'>  
-  <div id='yours'></div>
-  <div id='computers'></div>
+<div class='game-container'>
+  <div class="plays" id='yours'></div>
+  <div class='plays' id='computers'></div>
+</div>
+<div class='game-container'>
   <div id='result'></div>
-</div>  
+</div>
+<div id = 'counter'>
+  <div id = 'user-count'>0</div>
+  <div id = 'computer-count'>0</div>
+</div>
+<button class="choice" id='new-game' onclick="location.reload()">new game</button>
 </body>
 </html>
