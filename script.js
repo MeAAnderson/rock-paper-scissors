@@ -70,6 +70,7 @@ function playRound(userChoice){
 function updateCount(result){
   let countUserWins = parseInt(document.getElementById('user-count').innerHTML);
   let countComputerWins = parseInt(document.getElementById('computer-count').innerHTML);
+  let countTies = parseInt(document.getElementById('ties-count').innerHTML);
   if (result === 'you win'){
     countUserWins += 1
     document.getElementById('user-count').innerHTML = countUserWins
@@ -78,6 +79,9 @@ function updateCount(result){
     countComputerWins += 1
     document.getElementById('computer-count').innerHTML = countComputerWins
     document.getElementById("result").style.backgroundColor = 'tomato'
+  } else {
+    countTies += 1
+    document.getElementById('ties-count').innerHTML = countTies
   }
   
 }

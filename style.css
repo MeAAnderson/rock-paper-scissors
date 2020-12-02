@@ -106,6 +106,14 @@ div{
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
+#ties-count{
+  height: 1em;
+  background-color: cyan;
+
+  border-style: solid;
+  border: 2px solid rgb(39, 42, 122);
+  
+}
 #new-game{
   margin: 2em;
   width: 20%;
